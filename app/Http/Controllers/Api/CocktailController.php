@@ -10,7 +10,7 @@ class CocktailController extends Controller
 {
     public function index()
     {
-        $projects = Cocktail::all();
+        $cocktails = Cocktail::all();
         return response()->json([
             'success' => true,
             'results' => $cocktails,
