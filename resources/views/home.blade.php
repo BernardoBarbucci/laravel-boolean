@@ -1,4 +1,4 @@
-@extends('layouts.guest.app')
+@extends('layouts.pages.app')
 
 @section('content')
     <div class="container">
@@ -23,14 +23,14 @@
                     <ul class="list-group">
                         <li class="list-group-item d-flex justify-content-center">
                             @auth
-                                <a href="{{ route('admin.projects.index') }}" class="btn btn-primary"
-                                    style="width: 15rem">Projects list</a>
+                                {{-- <a href="{{ route('admin.projects.index') }}" class="btn btn-primary"
+                                    style="width: 15rem">Projects list</a> --}}
                             @endauth
                         </li>
                         <li class="list-group-item d-flex justify-content-center">
                             @auth
-                                <a href="{{ route('admin.projects.create') }}" class="btn btn-primary"
-                                    style="width: 15rem">Create</a>
+                                {{-- <a href="{{ route('admin.projects.create') }}" class="btn btn-primary"
+                                    style="width: 15rem">Create</a> --}}
                             @endauth
                         </li>
                     </ul>

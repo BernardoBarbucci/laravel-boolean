@@ -24,14 +24,14 @@
 
     <div id="app">
 
-        @include('layouts.admin.header')
+        @include('layouts.pages.header')
 
         <main class="bg-dark">
             @yield('content')
         </main>
 
         <div class="pt-2">
-            @include('layouts.admin.footer')
+            @include('layouts.pages.footer')
         </div>
     </div>
 </body>

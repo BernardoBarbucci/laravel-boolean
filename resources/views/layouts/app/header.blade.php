@@ -1,10 +1,10 @@
-@extends('layouts.guest.app')
+@extends('layouts.app.app')
 
 @section('main-content')
     <header>
         <section>
             <h1>
-                USER HEADER
+                app header
             </h1>
         </section>
     </header>
