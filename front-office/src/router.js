@@ -1,9 +1,8 @@
 // da rivedere completamente
 
 import { createRouter, createWebHistory } from "vue-router";
-import HomePageVue from "./pages/HomePage.vue";
-import ProjectListVue from "./pages/ProjectList.vue";
-import CategoriesListVue from "./pages/CategoriesList.vue";
+import HomePage from "./components/HomePage.vue";
+import CocktailsIndex from './components/CocktailsIndex.vue';
 
 
 const router = createRouter({
@@ -12,17 +11,12 @@ const router = createRouter({
         {
             path: '/',
             name: 'home',
-            component: HomePageVue
+            component: HomePage
         },
         {
-            path: '/project',
-            name: 'project',
-            component: ProjectListVue
-        },
-        {
-            path: '/categories',
-            name: 'categories',
-            component: CategoriesListVue
+            path: '/cocktails',
+            name: 'cocktails',
+            component: CocktailsIndex
         }
     ]
 });
