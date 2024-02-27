@@ -8,11 +8,11 @@
     </section>
     <section>
         <div>
-            <div v-for="(cocktail, index) in cocktails" :key="index">
+            <!-- <div v-for="(cocktail, index) in cocktails" :key="index">
 
                 <p>{{ cocktail.name }}</p>
 
-            </div>
+            </div> -->
         </div>
     </section>
 </template>
@@ -22,6 +22,7 @@ import axios from 'axios';
 
 export default {
     name: 'CocktailsIndex',
+
     data() {
         return {
             cocktails: [],
@@ -30,7 +31,7 @@ export default {
 
     methods: {
         getCocktails() {
-            axios.get('http://127.0.0.1:8000/api/cocktail')
+            axios.get('http://127.0.0.1:8000/api/cocktails')
                 .then((response) => {
                     console.log(response);
                     this.cocktails = response.data.result.data;
@@ -43,7 +44,10 @@ export default {
 
     created() {
         this.getCocktails();
-    }
+        // qua sotto funziona e stampa in console
+        console.log('cocktails');
+    },
+
 }
 </script>
 
