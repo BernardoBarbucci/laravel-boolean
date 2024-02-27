@@ -10,7 +10,7 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
-            path: '/home',
+            path: '/',
             name: 'home',
             component: HomePageVue
         },
@@ -24,13 +24,7 @@ const router = createRouter({
             name: 'categories',
             component: CategoriesListVue
         }
-
-
-
     ]
-
-
-
 });
 
 
