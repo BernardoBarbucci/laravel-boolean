@@ -31,3 +31,5 @@ return new class extends Migration
         Schema::dropIfExists('cocktails');
     }
 };
+
+//aggiornato in modo correto il migrate
