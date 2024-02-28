@@ -171,3 +171,6 @@ class CocktailsSeeder extends Seeder
         DB::table('cocktails')->insert($cocktails);
     }
 }
+
+
+//ho messo l'array meglio, adesso dovrebbe essere più elegante.
